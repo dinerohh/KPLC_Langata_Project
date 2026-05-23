@@ -1,0 +1,179 @@
+{
+  "features_s1": [
+    "total_length_km",
+    "n_secondary_subs",
+    "n_switches",
+    "avg_segment_m",
+    "bbox_area_km2",
+    "year",
+    "month",
+    "day_of_week",
+    "day_of_year",
+    "is_weekend",
+    "month_sin",
+    "month_cos",
+    "dow_sin",
+    "dow_cos",
+    "season_long_dry",
+    "season_long_rains",
+    "season_short_dry",
+    "season_short_rains",
+    "max_demand_kva",
+    "affected_customers",
+    "feeder_id",
+    "outages_last_7d",
+    "outages_last_30d",
+    "duration_last_7d_hrs",
+    "days_since_last_outage",
+    "consecutive_clean_days",
+    "precipitation_sum",
+    "wind_speed_10m_max",
+    "wind_gusts_10m_max",
+    "et0_fao_evapotranspiration",
+    "heavy_rain_day",
+    "high_wind_day",
+    "is_public_holiday",
+    "is_long_weekend",
+    "days_to_next_holiday",
+    "days_since_holiday",
+    "feeder_outage_rate",
+    "storm_index",
+    "rain_season_interaction",
+    "demand_risk_score",
+    "overdue_pressure",
+    "length_x_outage_rate"
+  ],
+  "features_s2": [
+    "hour",
+    "month",
+    "dow",
+    "precipitation_sum",
+    "wind_speed_10m_max",
+    "wind_gusts_10m_max",
+    "et0_fao_evapotranspiration",
+    "heavy_rain_day",
+    "high_wind_day",
+    "is_public_holiday",
+    "is_long_weekend",
+    "days_to_next_holiday",
+    "days_since_holiday",
+    "day_of_week",
+    "day_of_year",
+    "year",
+    "is_weekend",
+    "month_sin",
+    "month_cos",
+    "dow_sin",
+    "dow_cos",
+    "hour_sin",
+    "hour_cos",
+    "season_long_dry",
+    "season_long_rains",
+    "season_short_dry",
+    "season_short_rains",
+    "max_demand_kva",
+    "affected_customers",
+    "feeder_id",
+    "total_length_km",
+    "n_secondary_subs",
+    "n_switches",
+    "avg_segment_m",
+    "bbox_area_km2",
+    "events_last_7d",
+    "events_last_30d",
+    "days_since_last",
+    "feeder_event_share",
+    "storm_index",
+    "rain_season_interaction",
+    "demand_load_factor"
+  ],
+  "class_labels": {
+    "1": "Loss of Supply",
+    "2": "Controlled Interruption",
+    "3": "Physical Fault"
+  },
+  "feeder_codes": {
+    "HARDY EX LANGATA": 0,
+    "KAREN HOSPITAL EX LANGATA": 1,
+    "KUWINDA EX LANGATA": 2,
+    "MAGADI  EX LANGATA": 3,
+    "NDALATI EX LANGATA": 4,
+    "NGEI EX LANGATA": 5,
+    "OTIENDE EX LANGATA": 6,
+    "SOWETO EX LANGATA": 7
+  },
+  "feeder_static": {
+    "HARDY EX LANGATA": {
+      "max_demand_kva": 4828.2,
+      "affected_customers": 3056
+    },
+    "KAREN HOSPITAL EX LANGATA": {
+      "max_demand_kva": 854.2,
+      "affected_customers": 1206
+    },
+    "KUWINDA EX LANGATA": {
+      "max_demand_kva": 1656.0,
+      "affected_customers": 2393
+    },
+    "MAGADI  EX LANGATA": {
+      "max_demand_kva": 2978.0,
+      "affected_customers": 6841
+    },
+    "NDALATI EX LANGATA": {
+      "max_demand_kva": 1954.9,
+      "affected_customers": 1008
+    },
+    "NGEI EX LANGATA": {
+      "max_demand_kva": 2905.6,
+      "affected_customers": 12860
+    },
+    "OTIENDE EX LANGATA": {
+      "max_demand_kva": 122.2,
+      "affected_customers": 245
+    },
+    "SOWETO EX LANGATA": {
+      "max_demand_kva": 8869.3,
+      "affected_customers": 33331
+    }
+  },
+  "sarima_feeders": [
+    "HARDY EX LANGATA",
+    "KUWINDA EX LANGATA",
+    "MAGADI  EX LANGATA",
+    "NDALATI EX LANGATA",
+    "NGEI EX LANGATA",
+    "SOWETO EX LANGATA"
+  ],
+  "active_feeders": [
+    "HARDY EX LANGATA",
+    "KAREN HOSPITAL EX LANGATA",
+    "KUWINDA EX LANGATA",
+    "MAGADI  EX LANGATA",
+    "NDALATI EX LANGATA",
+    "NGEI EX LANGATA",
+    "OTIENDE EX LANGATA",
+    "SOWETO EX LANGATA"
+  ],
+  "ensemble_weights": {
+    "w_ts": 0.0,
+    "w_ml": 1.0
+  },
+  "split_date": "2025-07-01",
+  "outage_threshold": 0.3,
+  "label_map": {
+    "1": 0,
+    "2": 1,
+    "3": 2
+  },
+  "label_unmap": {
+    "0": 1,
+    "1": 2,
+    "2": 3
+  },
+  "crew_map": {
+    "0": "\u2014",
+    "1": "System engineers (grid-side fault)",
+    "2": "Switching crew (planned interruption)",
+    "3": "Line maintenance + tree-cutting crew"
+  }
+}

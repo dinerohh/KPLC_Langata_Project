@@ -1,0 +1,5 @@
+,value,threshold,label
+Macro F1-Score,0.39814289464061997,0.7,≥ 0.70
+ROC-AUC (OvR macro),0.6136172895121502,0.8,≥ 0.80
+Matthews Corr. Coefficient,0.13552975989289184,0.55,≥ 0.55
+Physical Fault Recall (Cls 3),0.15384615384615385,0.6,≥ 0.60

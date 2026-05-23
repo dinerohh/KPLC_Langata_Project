@@ -1,0 +1,15 @@
+# Data
+data/raw/
+*.xlsx
+*.csv
+!outputs/dashboard/*.csv
+
+# Models
+models/saved/
+*.pkl
+*.json
+
+# Environment & Colab
+.ipynb_checkpoints/
+__pycache__/
+.env

@@ -25,7 +25,7 @@ st.set_page_config(
     page_title="KPLC Langata Grid Monitor",
     page_icon="⚡",
     layout="wide",
-    initial_sidebar_state="expanded",
+    initial_sidebar_state="auto",
 )
 
 # ── design tokens ─────────────────────────────────────────────────────────────

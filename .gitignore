@@ -1,0 +1,22 @@
+# Ignore raw data and notebooks
+*.xlsx
+*.csv
+*.ipynb
+*.pkl
+*.json
+
+# Except dashboard assets
+!dashboard/
+!dashboard/**
+!dashboard/app.py
+!dashboard/requirements.txt
+!dashboard/data/*.csv
+!outputs/dashboard/*.csv
+!scripts/
+!README.md
+!.gitignore
+
+# Environment
+.ipynb_checkpoints/
+__pycache__/
+.env
